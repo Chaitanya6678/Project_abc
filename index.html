@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, Initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+        <title>Website Project</title>
+    </head>
+    <body>
+        <div class="side-bar">
+            <div class="menu">
+                <div class="item"><a href="" onclick="display('sectionblankpage'); return false;"><i class="bi bi-play mr-2"></i>Build</a></div>
+                <div class="item"><a href="" onclick="display('sectionblankpage'); return false;"><i class="bi bi-check-circle mr-2"></i>Test</a></div>
+                <div class="item"><a href="" onclick="display('sectionblankpage'); return false;"><i class="bi bi-sunrise mr-2"></i>Distribute </a></div>
+                <div class="item"><a href="" onclick="display('sectionblankpage'); return false;"><i class="bi bi-exclamation-triangle mr-2"></i>Diagnostics </a></div>
+                <div class="item">
+                    <a class="sub-btn dropdown"><i class="bi bi-reception-4 mr-2"></i>Analytics </a>
+                    <div class="sub-menu">
+                        <a href="" onclick="display('sectionmainpage'); return false;">Overview</a>
+                        <a href="" onclick="display('sectionblankpage'); return false;">Events</a>
+                        <a href="" onclick="display('sectionblankpage'); return false;">Log flow</a>
+                    </div>
+                </div>
+                <div class="item"><a href="" onclick="display('sectionblankpage'); return false;"><i class="bi bi-gear mr-2"></i>Settings </a></div>
+            </div>
+        </div>
+        <div id="sectionblankpage" class="active">
+            <div class="blank-page">
+                <h1>This is the Blank Page</h1>
+                <p>Click on Overview to show Information</p>
+            </div>
+        </div>
+        <div id="sectionmainpage" class="active">
+            <div class="chart-card d-flex flex-column">
+                <div class="item-card1 shadow-2 d-flex flex-row">
+                    
+                        <img 
+                            src="https://res.cloudinary.com/dinfoxdqg/image/upload/v1730357443/WhatsApp_Image_2024-10-31_at_12.19.57_cb5e0606_wgd0qv.jpg"
+                            class="item-card-img1"
+                        />
+                        <div class="ml-3 mt-2">
+                            <h1 class="heading1">Learn more with Application Insights</h1>
+                            <p class="para1";>Set up export to Azure Application Insights to get further insights into your data with powerful
+                                query capabilities and more data visualization options.
+                                <a href="#">Read More.</a>
+                            </p>
+                        </div>
+                        <button class="btn-secondary button1" style="color: black;">Dismiss</button>
+                        <button class="btn-primary button2 ml-2">Let's do it</button>
+
+                </div>
+                <img
+                    src="https://res.cloudinary.com/dinfoxdqg/image/upload/v1730370338/project_imp_5_xci2mz.jpg"
+                    class="graph-img"
+                />
+                <div class="d-flex flex-row">
+                    <div class="session-card">
+                        <h1 class="session-heading">Daily sessions per user <i class="bi bi-question-circle ques-mark"></i> </h1>
+                        <p class="session-para">Daily sessions per user</p>
+                    </div>
+                    <div class="session-card">
+                        <h1 class="session-heading">Session duration<i class="bi bi-question-circle ques-mark1"></i> </h1>
+                        <p class="session-para">Session duration</p>
+                    </div>
+                    <div class="session-card ml-5">
+                        <h1 class="session-heading">Top devices <i class="bi bi-question-circle ques-mark2"></i> </h1>
+                        <p class="session-para1">OneplusPro</p>
+                        <h1 class="session-heading">1 <a href="#" class="percent-sym">100%</a> </h1>
+                        
+                    </div>
+                </div>    
+
+            </div>
+        </div>
+
+
+
+
+        <script type="text/javascript">
+           $(document).ready(function(){
+            //jquery for toggle submenus
+            $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle;
+            });
+           });
+        </script>
+        <script>
+            function display(sectionId) {
+                // Hide both sections
+                document.getElementById('section1').classList.remove('active');
+                document.getElementById('section2').classList.remove('active');
+                
+                // Show the selected section
+                document.getElementById(sectionId).classList.add('active');
+            }
+        </script>
+    </body>
+
+
+</html>

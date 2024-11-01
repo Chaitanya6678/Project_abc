@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+.side-bar{
+    background-color: #dedcdc;
+    position: fixed;
+    width: 20vw;
+    min-height: 100vh;
+}
+.side-bar .menu{
+    margin-top: 20px;
+}
+.side-bar .menu .item{
+    position: relative;
+    cursor: pointer;
+}
+.side-bar .menu .item a{
+    color: #757474;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    padding: 5px 30px;
+    line-height: 50px;
+}
+.side-bar .menu .item a:hover{
+    background-color: #9c9c9c;
+    color: black;
+    transition: 0.3 ease;
+}
+.side-bar .menu .item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3 ease;
+}
+.side-bar .menu .item .sub-menu a{
+    padding-left: 60px;
+}
+.blank-page{
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    text-align: center;
+    padding: 100px;
+}
+.chart-card{
+    padding: 10px;
+    background-color: #e8e5e5;
+    height: 100vh;
+    width: 80vw;
+    position: absolute;
+    right: 0;
+}
+.item-card1{
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: 130px;
+    padding: 15px;
+}
+.item-card-img1{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}
+.heading1{
+    font-size: 20px;
+}
+.para1{
+    font-size: 13px;
+}
+.button1{
+    border-width: 0px;
+    border-radius: 3px;
+    width: 120px;
+    height: 35px;
+    font-size: 12px;
+    margin-top: 60px;
+}
+.button2{
+    border-width: 0px;
+    border-radius: 3px;
+    width: 120px;
+    height: 35px;
+    font-size: 12px;
+    margin-top: 60px;
+}
+.graph-img{
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.session-card{
+    background-color: #ffffff;
+    height: 200px;
+    width: 400px;
+    margin-top: 40px;
+    padding: 15px;
+}
+.session-heading{
+    font-size: 20px;
+}
+.session-para{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+.ques-mark{
+    margin-left: 100px;
+}
+.ques-mark1{
+    margin-left: 180px;
+}
+.ques-mark2{
+    margin-left: 200px;
+}
+.session-para1{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.percent-sym{
+    margin-left: 250px;
+}
+#sectionblankpage, #sectionmainpage{
+    display: none;
+}
+#sectionblankpage.active, #sectionmainpage.active{
+    display: block;
+}
